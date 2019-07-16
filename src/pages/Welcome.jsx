@@ -5,19 +5,27 @@ import Grouped from '../components/Custom/Histogram.js'
 import Radar from '../components/Custom/Radar.js'
 import TopSkills from '../components/Custom/TopSkills.js'
 import About from '../components/Custom/About.js'
+import RecentExperience from '@/components/Custom/RecentExperience.js';
+import Info from '@/components/Custom/Info.js';
 
 import 'antd/dist/antd.css';
-import { Row, Col, Tag, Typography, Timeline } from 'antd';
-import RecentExperience from '@/components/Custom/RecentExperience.js';
-
-const { Title } = Typography;
+import { Row, Col } from 'antd';
 
 export default () => (
   <PageHeaderWrapper>
     <div>
-      <About />
+     
+      <Row>
+        <Col span={12}>
+          <About />
+        </Col>
+
+        <Col span={12}>          
+          <Info />
+        </Col>
+      </Row>
       <br /><br /><br />
-      <Row >
+      <Row>
         <Col span={12}>
           <TopSkills />
           <br /><br /><br />
@@ -29,7 +37,7 @@ export default () => (
         </Col>
       </Row>
 
-      <Row >
+      <Row>
         <Col span={12}>
           <RecentExperience />
         </Col>
