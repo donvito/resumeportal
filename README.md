@@ -1,4 +1,6 @@
-# Ant Design Pro
+# Resume Portal
+
+![alt text](./readme_images/screenshot.png)
 
 This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
 
